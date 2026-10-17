@@ -4,71 +4,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nandita K | Portfolio</title>
+    <meta name="description" content="Nandita K's personal portfolio showcasing software development and core electronics skills, projects, and experience.">
+    <title>Nandita K | Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="navbar">
-        <a class="logo" href="index.html">Nandita<span>.</span></a>
+    <header class="header">
+        <a href="index.html" class="logo">Nandita<span>.</span></a>
+
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#career">Resumes</a>
+            <a href="#career">Explore My Profile</a>
         </nav>
     </header>
 
     <main>
+        <!-- HOME SECTION -->
         <section class="hero" id="home">
-            <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
-            <h1>Hi, I'm <span>Nandita K</span></h1>
-            <h2>ECE Student | Aspiring Engineer</h2>
-            <p>
-                Exploring software development, electronics,
-                embedded systems and communication technology.
-            </p>
-            <a class="button" href="#career">Explore My Profiles</a>
+            <div class="hero-content">
+                <p class="intro">WELCOME TO MY PORTFOLIO</p>
+
+                <h1>Hi, I'm <span>Nandita K</span></h1>
+
+                <h2>Electronics & Communication Engineering Student</h2>
+
+                <p class="hero-description">
+                    I am passionate about technology, problem-solving,
+                    software development, and core electronics.
+                    Explore my two career profiles to learn more about
+                    my skills, projects, education, and experience.
+                </p>
+
+                <a href="#career" class="btn">Explore My Profile</a>
+            </div>
         </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I am pursuing Electronics and Communication Engineering
-                (Advanced Communication Technology) at Dr. Mahalingam
-                College of Engineering and Technology.
+        <!-- ABOUT SECTION -->
+        <section class="about section" id="about">
+            <div class="section-heading">
+                <p class="intro">GET TO KNOW ME</p>
+                <h2>About Me</h2>
+            </div>
+
+            <p class="about-text">
+                I am an Electronics and Communication Engineering
+                student at Dr. Mahalingam College of Engineering
+                and Technology. I am interested in both software
+                development and core electronics. Through academic
+                projects, technical activities, and internship
+                experience, I continue to develop my technical
+                knowledge and problem-solving skills.
             </p>
+
+            <div class="quick-info">
+                <div class="info-card">
+                    <h3>Education</h3>
+                    <p>B.E. Electronics and Communication Engineering</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Interests</h3>
+                    <p>Software Development · Embedded Systems · Electronics</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Experience</h3>
+                    <p>RF and FM Broadcasting Internship</p>
+                </div>
+            </div>
         </section>
 
-        <section id="career">
-            <p class="eyebrow">EXPLORE MY EXPERIENCE</p>
-            <h2>Choose Your Career Path</h2>
+        <!-- CAREER OPTIONS -->
+        <section class="career section" id="career">
+            <div class="section-heading">
+                <p class="intro">CHOOSE YOUR INTEREST</p>
+                <h2>Explore My Profiles</h2>
+                <p>
+                    Select a profile to view the relevant resume
+                    information directly on this website.
+                </p>
+            </div>
 
-            <div class="career-grid">
-                <a class="career-card software"
-                   href="resumes/software-resume.html">
-                    <span class="card-icon">{"</>"}</span>
-                    <h3>Software</h3>
-                    <p>Programming, web development, databases and projects.</p>
-                    <span class="card-link">Explore Software Resume →</span>
+            <div class="career-container">
+                <!-- SOFTWARE PROFILE -->
+                <article class="career-card">
+                    <div class="card-icon" aria-hidden="true">💻</div>
+
+                    <h3>Software Profile</h3>
+
+                    <p>
+                        Explore my programming skills, software
+                        projects, technical knowledge, education,
+                        and certifications.
+                    </p>
+
+                    <a href="software.html" class="btn">
+                        View Software Profile →
+                    </a>
+                </article>
+
+                <!-- CORE / HARDWARE PROFILE -->
+                <article class="career-card">
+                    <div class="card-icon" aria-hidden="true">⚡</div>
+
+                    <h3>Core / Hardware Profile</h3>
+
+                    <p>
+                        Explore my electronics knowledge, embedded
+                        systems projects, RF internship, hardware
+                        skills, and academic achievements.
+                    </p>
+
+                    <a href="core.html" class="btn">
+                        View Core Profile →
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact section" id="contact">
+            <div class="section-heading">
+                <p class="intro">LET'S CONNECT</p>
+                <h2>Contact Me</h2>
+            </div>
+
+            <div class="contact-links">
+                <a href="mailto:nanditanandita1626@gmail.com">
+                    Email
                 </a>
 
-                <a class="career-card hardware"
-                   href="resumes/core-resume.html">
-                    <span class="card-icon">⌘</span>
-                    <h3>Core / Hardware</h3>
-                    <p>Electronics, embedded systems, RF and communication.</p>
-                    <span class="card-link">Explore Core Resume →</span>
+                <a href="https://www.linkedin.com/in/nandita16"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+
+                <a href="https://github.com/Nanditakaruppusamy"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub
                 </a>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2026 Nandita K | Personal Portfolio</p>
-        <a href="https://github.com/Nanditakaruppusamy">
-            GitHub Profile
-        </a>
+    <footer class="footer">
+        <p>© <span id="year"></span> Nandita K. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
 </body>
 </html>
